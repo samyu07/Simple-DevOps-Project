@@ -40,4 +40,18 @@ Docker Hub is a cloud-based registry service which allows you to link to code re
    ```sh
    docker pull valaxy/ubuntu:demo
    ```
+ #### Notes
+ 
+ ```sh
+useradd dockeradmin
+passwd dockeradmin
+[root@ip-]# usermod -aG docker dockeradmin
+[root@ip-]# id dockeradmin
+uid=501(dockeradmin) gid=501(dockeradmin) groups=501(dockeradmin),497(docker)
+[root@ip-]#
+
+enable passwordbased authentication in our server
+/etc/ssh/sshd_config
+	update password on authentication YES
+```
 
