@@ -24,6 +24,15 @@ Maven is a code build tool which used to convert your code to an artifact. this 
    M2=$M2_HOME/bin
    PAHT=<Existing_PATH>:$M2_HOME:$M2
    ```
+   ```sh
+   JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.222.b10-0.47.amzn1.x86_64
+   M2_HOME=/opt/maven
+   M2=$M2_HOME/bin
+
+   PATH=$PATH:$HOME/.local/bin:$HOME/bin:$JAVA_HOME:$M2:$M2_HOME
+   export PATH
+
+   ```
 #### Checkpoint 
 1. logoff and login to check maven version
   
