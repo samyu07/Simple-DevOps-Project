@@ -1,0 +1,7 @@
+### To get the ssh connection with the existing keys
+    ```sh
+    Idf you have the hidden user exchanged between server then to recover the user ssh login
+    chmod g-w /home/your_user
+    chmod 700 /home/your_user/.ssh
+    chmod 600 /home/your_user/.ssh/authorized_keys
+    ```
